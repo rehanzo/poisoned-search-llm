@@ -1,0 +1,14 @@
+[project]
+name = "poisoned-search-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.62.0",
+    "backoff>=2.2.1",
+    "kagiapi>=0.2.1",
+    "litellm[proxy]>=1.75.3",
+    "mirascope[litellm,openai]>=1.25.5",
+    "openai<1.99.2",
+]
