@@ -22,6 +22,7 @@ async def main():
     constants.POISON_MODEL = args.poison_model
     constants.ASSISTANT_MODEL = args.assistant_model
 
+    # this is a bit of a hack but f it
     from llm import WebSearchAgent
 
     web_assistant = WebSearchAgent()
