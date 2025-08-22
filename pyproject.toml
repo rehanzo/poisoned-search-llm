@@ -1,7 +1,7 @@
 [project]
 name = "poisoned-search-llm"
 version = "0.1.0"
-description = "Add your description here"
+description = "See how LLMs react with poisoned search results. "
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
