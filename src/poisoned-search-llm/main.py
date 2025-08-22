@@ -4,7 +4,7 @@ import constants
 
 async def main():
     parser = argparse.ArgumentParser(
-        description="Parse receipt images and output data."
+        description="Interact with an LLM that is fed poisoned results. Model IDs are litellm IDs."
     )
     parser.add_argument(
         "--facts", required=True, help="Stated facts to poison results with"

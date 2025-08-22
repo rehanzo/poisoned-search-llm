@@ -104,6 +104,8 @@ Spent some time playing with the poisoning prompt and model, and it doesn't seem
 ### Claude Models are Special
 All models besides Claude models will generally take search results at face value, no matter how crazy the results may be. Claude will often push back, noting that the results seem fictional or tampered with. Sometimes, it will accurately identify them as AI generated.
 
+This is not a good or a bad thing. Claude's 'stubbornness' (not sure how else to put it) can actually result in worse performance for certain tasks, as it does make it less amenable. But I feel this stubbornness is the reason why it is better in agentic tasks. If you think about it, an employee that has their own opinion's, pushes back on things, and calls things out is more likey to be an employee that operates more effectively independently. I think this would also apply to an LLM for agentic tasks.
+
 #### Example
 command: 
 ```bash
