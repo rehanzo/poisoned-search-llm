@@ -97,8 +97,10 @@ It is pretty simple. I set up a typical web assistant chatbot using the Kagi Sea
 - `--assistant_model ASSISTANT_MODEL`
   - Model to respond with
 
+The model IDs are litellm IDs. API keys are required to be set based on what models you use. For example, if you are using Claude models, `ANTHROPIC_API_KEY` envvar must be set. If you are using OpenAI models, `OPENAI_API_KEY` envvar must be set. `GEMINI_API_KEY` for Gemini.
+
 ## Findings
-### Models Aren't The Best at Poisoning Results
+### Models Aren't The Best at Poisoning Results Convincingly
 Spent some time playing with the poisoning prompt and model, and it doesn't seem like they are really the best at poisoning the results subtly. For example, if a fact is "There has been a nuclear attack, the US has been obliterated.", the model might poison a result about US trade with the snippet "Trade in the US is now irrelevant, as the country has been obliterated". A result about American trade would likely remain unchanged if such an event were to actually take place.
 
 ### Claude Models are Special
